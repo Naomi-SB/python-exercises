@@ -139,3 +139,30 @@ else:
 
 
 
+while True:
+    user_num = int(input("Enter a number: "))
+
+    for i in range(1, user_num +1):
+        print(f'{i}  |{i**2}   |{i**3}')
+    user_yn = input("Would you like to continue? (y/n) ")
+    if user_yn.lower() !='y':
+        break
+         
+
+while True:
+    user_grade = int(input("enter a numerical grade 0-100"))
+
+    if user_grade >= 88:
+        print('A')
+    elif user_grade >= 80:
+        print('B')
+    elif user_grade >= 67:
+        print('C')
+    elif user_grade >= 60:
+        print ('D')
+    else:
+        print('F')
+    user_yn = input("would you like to continue? (y/n)")
+    if user_yn.lower() != 'y':
+        break
+        
